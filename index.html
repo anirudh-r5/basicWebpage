@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter name here"><br><br>
+            <label for="addr">Address:</label>
+            <input type="text" id="addr" name="addr" placeholder="Enter address here"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter email here"><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="email" placeholder="Enter 10 digit number" pattern="[0-9]{10}"><br><br>
+            <label for="iq">IQ:</label>
+            <input type="text" id="iq" name="iq" placeholder="Enter IQ here"><br><br>
+            <p>Gender:</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male"><br>
+            <label for="gender">Female</label>
+            <input type="radio" id="female" name="gender" value="Female"><br>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="Other"><br><br>
+            <label for="dateOuting">Date of Proposed Outing: </label>
+            <input type="date" name="dateOuting" id="dateOuting">
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>Check all that apply:</p>
+            <label for="tat">I have tattoos and/or piercings</label>
+            <input type="checkbox" name="tat" id="tat"><br>
+            <label for="years">I am more than 2 years older than my daughter</label>
+            <input type="checkbox" name="years" id="years"><br>
+            <label for="v8">I own a panel van or V8</label>
+            <input type="checkbox" name="v8" id="v8"><br>
+            <label for="fulltime">I work full-time</label>
+            <input type="checkbox" name="fulltime" id="fulltime"><br>
+            <label for="rich">My parents are rich</label>
+            <input type="checkbox" name="rich" id="rich"><br>
+            <label for="lit">Is the date at a well lit public location</label>
+            <input type="checkbox" name="lit" id="lit"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="pol">Political Persuasion: </label>
+            <select name="pol" id="pol">
+                <option value="left">Left Wing</option>
+                <option value="right">Right Wing</option>
+                <option value="neutral">Neutral</option>
+            </select>
+            <label for="edu">Education Completed: </label>
+            <select name="edu" id="edu">
+                <option value="school">School</option>
+                <option value="college">University</option>
+                <option value="pg">Masters</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Essay Section</legend>
+            <label for="reason">In 50 words or more explain why you want to date my daughter</label><br>
+            <textarea name="reason" id="reason" cols="30" rows="5"></textarea><br><br>
+            <label for="refer">Contact details of 2 references</label><br>
+            <textarea name="refer" id="refer" cols="30" rows="5"></textarea><br><br>
+            <label for="upload">Upload Police clearance certificate, bank statement & Medical certificates here:</label>
+            <button type="button" value="upload" name="upload" id="upload">Attach Files</button>
+            <br>
+        </fieldset>
+        <br>
+        <div>
+            <button type="submit">Send Your Application</button>
+        </div>
+    </form>
+</body>
+</html>
