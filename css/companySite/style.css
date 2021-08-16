@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banners {
+    height: 980px;
+}
+
+#banner1 {
+    background-image: url(../../images/companySite/banner1.webp);
+}
+
+#banner2 {
+    background-image: url(../../images/companySite/banner2.png);
+}
+#banner3 {
+    background-image: url(../../images/companySite/banner3.png);
+}
+#banner4 {
+    background-image: url(../../images/companySite/banner4.png);
+}
+#banner5 {
+    background-color: purple;
+    height: 25vw;
+}
+
+.banner-ctn {
+    /* position: absolute; */
+    width: 100%;
+    padding: 0 200px;
+    padding-top: 190px;
+}
+
+.banner-ctn1 {
+    /* position: absolute; */
+    width: 100%;
+    padding: 0 200px;
+    padding-top: 90px;
+}
+
+.navig {
+    padding: 50px 80px;
+    width: 360px;
+    height: 175px
+}
+
+.main-nav {
+    margin-left: 400px;
+}
+
+.main-nav > li {
+    padding: 0 30px;
+}
+
+.no-border > li{
+    border-bottom: none;
+}
+
+.footer {
+    margin: 0 40%;
+}
