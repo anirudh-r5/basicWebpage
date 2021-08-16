@@ -1,3 +1,3 @@
 # Basic Webpage Design & Structure
 
-Vanilla HTML & CSS webpage.
+HTML & CSS webpages based on Bootstrap.
