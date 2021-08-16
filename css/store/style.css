@@ -1,0 +1,20 @@
+nav {
+    height: 3vh;
+}
+
+.nav-link {
+    color: black;
+}
+
+#cart {
+    filter: invert(1);
+}
+
+.products img{
+    width: 400;
+    height: 400;
+}
+
+#categories > .nav-item {
+    padding: 0 20px;
+}
