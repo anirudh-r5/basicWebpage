@@ -1,3 +1,3 @@
-# Basic Webpage Design & Structure
+# Basic Webpage Design, Structure & Functionality
 
-HTML & CSS webpages based on Bootstrap.
+Basic HTML, CSS and JavaScript-based webpages

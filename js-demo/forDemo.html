@@ -1,0 +1,25 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+		function func() {
+			let count = document.getElementById('count').value;
+			document.write("Starting For Loop" + "<br />");
+			for (count = 0; count < 10; count++) {
+				document.write("Current Count : " + count);
+				document.write("<br />");
+			}
+			document.write("Loop stopped!");
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<input type="text" id="count">
+		<input type="submit" onclick="func()" value="Submit" />
+	</form>
+
+</body>
+
+</html>

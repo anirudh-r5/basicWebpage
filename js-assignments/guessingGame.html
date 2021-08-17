@@ -1,0 +1,22 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+		function func() {
+			let guess = document.getElementById('num').value;
+			let num = Math.floor(11 * Math.random());
+			alert(`${(guess === num ) ? 'Good Work' : 'Not matched'}\nThe number was: ${num}`)
+		}
+	</script>
+	<title>Guess the number</title>
+</head>
+
+<body>
+	<form>
+		<input type="text" id="num" placeholder="Guess 0 to 10">
+		<input type="submit" onclick="func()" value="Submit" />
+	</form>
+
+</body>
+
+</html>

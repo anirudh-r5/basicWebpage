@@ -1,0 +1,19 @@
+<html>
+
+<head>
+	<title>String rotate right</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	let str = "w3resource";
+	let rot;
+	for (let index = str.length - 1; index >= 0; index--) {
+		rot = str.slice(index) + str.slice(0, index);
+		document.writeln(`<p>${rot}</p>`);
+	}
+	</script>
+	<p>This is web page body </p>
+</body>
+
+</html>

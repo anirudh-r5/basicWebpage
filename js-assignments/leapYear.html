@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+		function func() {
+			let year = document.getElementById('year').value;
+			alert(`Leap Year: ${(year % 100 === 0 ) ? (year % 400 === 0) : (year % 4 === 0)}`)
+		}
+	</script>
+	<title>Leap Year</title>
+</head>
+
+<body>
+	<form>
+		<input type="text" id="year">
+		<input type="submit" onclick="func()" value="Submit" />
+	</form>
+
+</body>
+
+</html>

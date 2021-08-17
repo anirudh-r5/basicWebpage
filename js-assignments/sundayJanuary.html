@@ -1,0 +1,24 @@
+<html>
+
+<head>
+	<title>Is January 1st a Sunday?</title>
+</head>
+
+<body>
+	<p>Is the 1st of January a Sunday?</p>
+	<script type="text/javascript">
+	let date = new Date(2014, 0, 1);
+	for (let index = 2014; index <= 2050; index++) {
+		date.setFullYear(index);
+		document.writeln(`<p>${index} - ${(date.getDay() === 0) ? 'True' : 'False'}</p>`);
+	}
+	let rot;
+	for (let index = str.length - 1; index >= 0; index--) {
+		rot = str.slice(index) + str.slice(0, index);
+		document.writeln(`<p>${rot}</p>`);
+	}
+	</script>
+	
+</body>
+
+</html>

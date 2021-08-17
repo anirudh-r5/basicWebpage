@@ -1,0 +1,37 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+		function func() {
+			let grade = document.getElementById('grade').value;
+			switch (grade) {
+				case 'A': document.write("Distinction<br />");
+					break;
+
+				case 'B': document.write("First Class<br />");
+					break;
+
+				case 'C': document.write("Second Class<br />");
+					break;
+
+				case 'D': document.write("Pass<br />");
+					break;
+
+				case 'F': document.write("Fail<br />");
+					break;
+
+				default: document.write("Unknown Grade<br />")
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<input type="text" id="grade">
+		<input type="submit" onclick="func()" value="Submit" />
+	</form>
+
+</body>
+
+</html>

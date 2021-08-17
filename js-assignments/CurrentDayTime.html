@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<title>Current Day & Time</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		let date = new Date();
+		let str;
+		switch (date.getDay()) {
+			case 0:
+				str = 'Sunday';
+				break;
+			case 1:
+				str = 'Monday';
+				break;
+			case 2:
+				str = 'Tuesday';
+				break;
+			case 3:
+				str = 'Wednesday';
+				break;
+			case 4:
+				str = 'Thursday';
+				break;
+			case 5:
+				str = 'Friday';
+				break;
+			case 6:
+				str = 'Saturday';
+				break;
+		}
+		document.writeln(`<p>Today is ${str}</p>`);
+		document.writeln(`<p>Current time is: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}</p>`);
+	</script>
+	<p>This is web page body </p>
+</body>
+
+</html>
