@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>REST API Demo</title>
+	<link rel="stylesheet" href="mystyles.css">
+	<script src="index.js"></script>
+</head>
+
+<body>
+	<section class="hero has-text-centered is-link">
+		<div class="hero-body">
+			<div id="main" class="container">
+				<h1 class="title is-1">
+					REST API Calls
+				</h1>
+				<h2 class="subtitle">
+					Try CRUD Operations below
+				</h2>
+			</div>
+		</div>
+	</section>
+	<div class="tabs is-centered" id="ops">
+		<ul>
+			<li class="is-active"><a>Create</a></li>
+			<li><a>Retrieve</a></li>
+			<li><a>Update</a></li>
+			<li><a>Delete</a></li>
+		</ul>
+	</div>
+	<div class="container" id="create">
+		<div class="field">
+			<label class="label">ID No.:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter ID" id="createID">
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Student Name:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter name" id="createName">
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Grade:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter grade" id="createGrade">
+			</div>
+		</div>
+		<div class="field has-text-centered">
+			<div class="control">
+				<button class="button is-link" id="createBtn">Submit</button>
+				<p id="submitSuccess" class="help is-success is-hidden">Successfully Added!</p>
+			</div>
+		</div>
+	</div>
+	<div class="container is-hidden" id="retrieve">
+		<div class="field">
+			<label class="label">Retrieve by ID:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter ID" id="retrieveID">
+			</div>
+		</div>
+		<div class="field has-text-centered">
+			<div class="control">
+				<button class="button is-link" id="retrieveBtn">Search</button>
+			</div>
+		</div>
+		<h3 class="title has-text-centered is-4">OR</h3>
+		<div class="field has-text-centered">
+			<div class="control">
+				<button class="button is-link" id="retrieveAll">Retrieve All</button>
+			</div>
+		</div>
+		<div class="table-container is-hidden" id="results">
+			<table class="table is-fullwidth is-hoverable is-bordered">
+				<thead class="is-hovered">
+					<tr>
+					  <th>ID</th>
+					  <th>Name</th>
+					  <th>Grade</th>
+					</tr>
+				  </thead>
+				  <tbody id="res_table"></tbody>
+
+			</table>
+		</div>
+	</div>
+	<div class="container is-hidden" id="update">
+		<div class="field">
+			<label class="label">ID to be updated:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter ID" id="updateID">
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">New Student Name:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter name" id="updateName">
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">New Grade:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter grade" id="updateHOD">
+			</div>
+		</div>
+		<div class="field has-text-centered">
+			<div class="control">
+				<button class="button is-link" id="updateBtn">Update</button>
+			</div>
+		</div>
+	</div>
+	<div class="container is-hidden" id="deletion">
+		<div class="field">
+			<label class="label">Delete by ID:</label>
+			<div class="control">
+				<input class="input is-rounded" type="text" placeholder="Enter ID" id="deleteID">
+			</div>
+		</div>
+		<div class="field has-text-centered">
+			<div class="control">
+				<button class="button is-link" id="deleteBtn">Delete</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
